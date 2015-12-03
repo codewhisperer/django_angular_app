@@ -1,0 +1,6 @@
+<ul class="nav">
+    <li ng-if="vm.loggedIn === 'True'" class="pull-left"><a href="#" ng-click="vm.logout()">Logout</a></li>
+    <li ng-if="vm.loggedIn === 'True'" class="pull-left"><a href="/list">User list</a></li>
+    <li ng-if="vm.loggedIn !== 'True'" class="pull-left"><a href="/login">Login</a></li>
+    <li ng-if="vm.loggedIn !== 'True'" class="pull-left"><a href="/register">Register</a></li>
+</ul>
